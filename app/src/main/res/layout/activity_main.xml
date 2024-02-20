@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F6F7"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+<RelativeLayout
+    android:layout_marginStart="10dp"
+    android:id="@+id/mainid"
+    android:layout_marginTop="15dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:id="@+id/a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Discover"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Products"
+        android:textColor="#494848"
+        android:textSize="10dp"
+        android:layout_below="@+id/a"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_account_circle_24"
+        android:layout_alignEnd="@+id/a"
+        android:layout_marginEnd="10dp"
+        />
+
+</RelativeLayout>
+
+
+<LinearLayout
+    android:layout_below="@+id/mainid"
+    android:id="@+id/maintwo"
+    android:layout_marginStart="10dp"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/item"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/optin"/>
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_alignEnd="@+id/item"
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:iconifiedByDefault="false"
+        android:background="#DDE6E3"
+        android:layout_marginLeft="20dp"
+        app:queryHint="Search" />
+
+</LinearLayout>
+
+        <HorizontalScrollView
+          android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/maintwo">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Laptops"
+                   android:background="@drawable/btnbg"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:gravity="center"
+                     />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Camera"
+                    android:background="@drawable/btnbg"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Drone"
+                    android:background="@drawable/btnbg"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Makeup"
+                    android:background="@drawable/btnbg"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Books"
+                    android:background="@drawable/btnbg"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    />    <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Shoes"
+                android:background="@drawable/btnbg"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                />
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Cloth"
+                    android:background="@drawable/btnbg"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    />    <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="cable"
+                android:background="@drawable/btnbg"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                />
+
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:padding="5dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/recyid"
+        android:layout_below="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomNavigationView"
+        tools:ignore="MissingConstraints" />
+
+
+    <!-- Bottom Navigation View -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#22848687"
+        android:elevation="2dp"
+        style="@style/Widget.MaterialComponents.BottomNavigationView"
+        app:menu="@menu/bottom_navigation_menu" />
+
+    </RelativeLayout>
+</RelativeLayout>

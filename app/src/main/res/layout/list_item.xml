@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:id="@+id/alldataid"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:orientation="vertical"
+       >
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Item"
+            android:padding="15dp"
+            android:gravity="center"
+            android:background="@color/d"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_star_rate_24"
+             android:layout_marginTop="4dp"
+                />
+
+            <TextView
+                android:id="@+id/ratingValueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.8"
+                android:textStyle="bold"
+                android:layout_marginStart="4dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_favorite_24"
+              android:layout_gravity="end"
+                />
+        </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textStyle="bold"
+        android:layout_marginStart="4dp"/>
+
+    <TextView
+        android:id="@+id/desID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textStyle="bold"
+        android:layout_marginStart="4dp"/>
+
+
+</LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

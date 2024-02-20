@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tab_home"
+        android:title="Home"
+        android:icon="@drawable/aa"
+        android:checked="true"
+        android:itemBackground="@color/b"
+    />
+
+    <item
+        android:id="@+id/tab_search"
+        android:title="favourite"
+        android:icon="@drawable/baseline_shopping_bag_24"
+         />
+
+    <item
+        android:id="@+id/tab_profile"
+        android:title="Order"
+        android:icon="@drawable/baseline_shopping_cart_24"
+         />
+    <item
+        android:id="@+id/acc"
+        android:title="Profile"
+        android:icon="@drawable/baseline_account_box_24"
+          />
+</menu>
